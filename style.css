@@ -427,6 +427,10 @@ footer h4{
 
 @media(max-width:700px)
 {
+    nav
+    {
+        display : none
+    }
     .text-box h1
     {
         font-size : 20px;
