@@ -162,6 +162,7 @@ nav .fa
     display: none;
 }
 
+
 /* course */
 
 .course
@@ -429,7 +430,7 @@ footer h4{
 {
     nav
     {
-        display : none
+        position : sticky;
     }
     .text-box h1
     {
@@ -454,6 +455,7 @@ footer h4{
         text-align: left;
         z-index: 2s;
         transition: 1s;
+        display : none;
     }
     nav .fa
     {
@@ -463,6 +465,10 @@ footer h4{
         margin-left :150px;
         font-size: 22px;
         cursor : pointer;
+    }
+    nav .fa:hover .nav-links
+    {
+        display: block;
     }
     .nav-links ul
     {
