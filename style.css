@@ -442,7 +442,7 @@ footer h4{
     }
     .nav-links ul li
     {
-        display: none;
+        display: block;
     }
     .nav-links
     {
@@ -464,10 +464,6 @@ footer h4{
         margin-left :150px;
         font-size: 22px;
         cursor : pointer;
-    }
-    nav .fa:hover .nav-links ul li
-    {
-        display: block;
     }
     .nav-links ul
     {
