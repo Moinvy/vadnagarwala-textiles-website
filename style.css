@@ -480,6 +480,14 @@ footer h4{
     .f-col img{
         width : 100%;
     }   
+    .para1 p
+    {
+        flex-direction: column;
+    };
+    .para1 img
+    {
+        flex-direction: column;
+    };
 }
 
 
