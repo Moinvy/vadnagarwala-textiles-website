@@ -165,11 +165,13 @@
         var navlinks=document.getElementById("nav-links");
         function s_menu()
         {
-            navlinks.style.right="0";
+            document.getElementById("nav-links").classList.toggle("active");
+            // navlinks.style.right="0";
         }
         function h_menu()
         {
-            navlinks.style.right="-200px";
+            document.getElementById("nav-links").classList.remove("active");
+            // navlinks.style.right="-200px";
         }
     </script>
 </body>
