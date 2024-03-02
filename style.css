@@ -484,6 +484,10 @@ footer h4{
     {
         flex-direction: column;
     };
+    .f-col button 
+    {
+        margin-left : 70px;
+    }
 }
 
 
