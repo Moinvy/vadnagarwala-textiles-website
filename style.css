@@ -471,6 +471,9 @@ footer h4{
     .row{
         flex-direction: column;
     }
+    .f-col{
+        flex-direction: column;
+    }
 }
 
 
