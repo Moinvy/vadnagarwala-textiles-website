@@ -442,7 +442,7 @@ footer h4{
     }
     .nav-links ul li
     {
-        display: block;
+        display: none
     }
     .nav-links
     {
@@ -455,7 +455,6 @@ footer h4{
         text-align: left;
         z-index: 2s;
         transition: 1s;
-        display : none;
     }
     nav .fa
     {
@@ -466,7 +465,7 @@ footer h4{
         font-size: 22px;
         cursor : pointer;
     }
-    nav .fa:hover .nav-links
+    nav .fa:hover .nav-links ul li
     {
         display: block;
     }
