@@ -475,8 +475,10 @@ footer h4{
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        margin : auto;
     }
+    .f-col img{
+        width : 100%;
+    }   
 }
 
 
