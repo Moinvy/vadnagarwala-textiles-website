@@ -471,23 +471,12 @@ footer h4{
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        margin-left : 80px;
+        margin-left : 150px;
+        margin-right: 0px;
     }
     .f-col img{
-        width: 250px;
+        width: 300px;
     }   
-    .para1 p
-    {
-        flex-direction: column;
-    };
-    .para1 img
-    {
-        flex-direction: column;
-    };
-    .f-col button 
-    {
-        margin-left : 70px;
-    }
 }
 
 
