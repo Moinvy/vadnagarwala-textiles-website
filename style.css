@@ -429,7 +429,7 @@ footer h4{
 {
     .text-box h1
     {
-        font-size : 17px;
+        font-size : 18px;
     }
     .text-box p{
         margin : 10px 0px 40px;
@@ -471,7 +471,7 @@ footer h4{
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        margin : 10px 0px;
+        margin-left : 10px;
     }
     .f-col img{
         width : 100%;
