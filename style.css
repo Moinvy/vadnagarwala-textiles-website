@@ -476,7 +476,11 @@ footer h4{
     }
     .f-col img{
         width: 300px;
-    }   
+    }  
+    .para1 {
+        display:block;
+    }
+ 
 }
 
 
