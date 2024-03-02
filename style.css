@@ -474,6 +474,7 @@ footer h4{
     .f-col{
         flex-direction: column;
         justify-content: center;
+        width: 100%;
     }
 }
 
