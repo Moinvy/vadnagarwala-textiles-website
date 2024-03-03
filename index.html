@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,8 +20,6 @@
             <i class="fa fa-times" onclick="h_menu()"></i>
             <ul>
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="#footer">ABOUT</a></li>
-                <li><a href="#">CONTACT</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropbtn">CONTENT</a>
                     <div class="dropdown-content">
@@ -30,7 +28,16 @@
                         <a href="#">Sublink 3</a>
                     </div>
                 </li>
-                <li><a href="#">HOME</a></li>
+                <li class="dropdown">
+                    <a href="gallery.html" class="dropbtn">CATALOG</a>
+                    <div class="dropdown-content">
+                        <a href="jaipuri.html">JAIPURI</a>
+                        <a href="bandhani.html">BANDHANI</a>
+                        <a href="chiffon.html">CHIFFON</a>
+                    </div>
+                </li>
+                <li><a href="#footer">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
             </ul>
         </div>
         <i style="align-items: right;" class="fa fa-bars" onclick="s_menu()"></i>
@@ -96,35 +103,35 @@
                     <button><a href="screen_printing.html">KNOW MORE</a></button>
                 </div>
                 <div class="f-col">
-                    <a href="#"><img src="images/block_printing.jpg" alt=""></a>
+                    <a href="screen_printing.html"><img src="images/block_printing.jpg" alt=""></a>
                     <h3>Block Printing</h3>
                     <p>This process is the earliest, simplest and slowest of all printing methods</p>
                     <br>
-                    <button><a href="#">KNOW MORE</a></button>
+                    <button><a href="screen_printing.html">KNOW MORE</a></button>
                 </div>
                 <div class="f-col">
-                    <a href="#"><img src="images/machine_printing.jpeg" alt=""></a>
+                    <a href="screen_printing.html"><img src="images/machine_printing.jpeg" alt=""></a>
                     <h3>Machine Printing</h3>
                     <p>This efficient technique is widely used in various industries for producing high-quality prints </p>
-                    <button><a href="#">KNOW MORE</a></button>
+                    <button><a href="screen_printing.html">KNOW MORE</a></button>
                 </div>
                 <div class="f-col">
-                    <a href=""><img src="images/digital_printing.jpg" alt=""></a>
+                    <a href="screen_printing.html"><img src="images/digital_printing.jpg" alt=""></a>
                     <h3>Digital Printing</h3>
                     <p>It is a process of printing on textiles and garments using specialized or modified inkjet technology</p>
-                    <button><a href="#">KNOW MORE</a></button>
+                    <button><a href="screen_printing.html">KNOW MORE</a></button>
                 </div>
                 <div class="f-col">
-                    <a href=""><img src="images/stencil_printing.jpg" alt=""></a>
+                    <a href="screen_printing.html"><img src="images/stencil_printing.jpg" alt=""></a>
                     <h3>Stencil Printing</h3>
                     <p>Commonly used for screen printing and art projects, this method allows for precise and repeatable designs on various materials.</p>
-                    <button><a href="#">KNOW MORE</a></button>
+                    <button><a href="screen_printing.html">KNOW MORE</a></button>
                 </div>
                 <div class="f-col">
-                    <a href=""><img src="images/flexo_printinng.jpeg" alt=""></a>
+                    <a href="screen_printing.html"><img src="images/flexo_printinng.jpeg" alt=""></a>
                     <h3>Flexo Printing</h3>
                     <p>Employed for packaging, labels, and newspapers, flexo printing excels in producing vibrant and high-quality prints</p>
-                    <button><a href="#">KNOW MORE</a></button>
+                    <button><a href="screen_printing.html">KNOW MORE</a></button>
                 </div>
             </div>
         </div>
@@ -165,11 +172,13 @@
         var navlinks=document.getElementById("nav-links");
         function s_menu()
         {
-             navlinks.style.right="0";
+            navlinks.style.right="0";
+
         }
         function h_menu()
         {
-             navlinks.style.right="-200px";
+            navlinks.style.right="-200px";
+
         }
     </script>
 </body>

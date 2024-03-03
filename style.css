@@ -93,6 +93,7 @@ nav img{
     display: none;
     border-top : 2px solid  #39b75d;
     margin-top : 10px;
+    margin-left : -30px;
     position: absolute;
     background-color: white;
     min-width: 150px;
@@ -108,7 +109,6 @@ nav img{
     display: block;
     width : 70px;
     margin :auto;
-
 }
 
 .dropdown:hover .dropdown-content {
@@ -163,7 +163,6 @@ nav .fa
 {
     display: none;
 }
-
 
 /* course */
 
@@ -432,8 +431,8 @@ footer h4{
 {
     nav
     {
-        position : sticky;
-    }
+        position: sticky;
+    };
     .text-box h1
     {
         font-size : 20px;
@@ -479,15 +478,15 @@ footer h4{
         justify-content: center;
         width: 100%;
         margin-left : 150px;
-        margin-right: 0px;
+        margin-right : 0px;
     }
     .f-col img{
-        width: 300px;
+        width : 300px;
+    } 
+    .para1
+    {
+        display: block;
     }  
-    .para1 {
-        display:block;
-    }
- 
 }
 
 
