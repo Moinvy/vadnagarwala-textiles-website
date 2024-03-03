@@ -73,6 +73,8 @@ nav img{
 }
 .dropdown-content {
     display: none;
+    border-top : 2px solid  #39b75d;
+    margin-top : 10px;
     position: absolute;
     background-color: white;
     min-width: 150px;
