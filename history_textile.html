@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HISTORY TEXTILE</title>
+    <link rel="icon" href="images/vadngarwala_textiles_logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="history_textile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +17,6 @@
         <img src="images/vadngarwala textiles.png" alt="credits : freepik">
         </div></a>
         <div class="nav-links" id="nav-links">
-            <i class="fa fa-times" onclick="h_menu()"></i>
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li class="dropdown">
@@ -39,7 +39,8 @@
                 <li><a href="#">CONTACT</a></li>
             </ul>
         </div>
-        <i style="align-items: right;" class="fa fa-bars" onclick="s_menu()"></i>
+        <i style="align-items: right;" class="fa fa-bars" id="open" onclick="s_menu()"></i>
+        <i class="fa fa-times" onclick="h_menu()" id="close"></i>
     </nav>
     <section class="content">
         <div class="header">
@@ -102,13 +103,21 @@
     </footer>
     <script>
         var navlinks=document.getElementById("nav-links");
+        var o=document.getElementById("open");
+        var c=document.getElementById("close");
         function s_menu()
         {
-            navlinks.style.right="0";
+            navlinks.style.display="block";
+            o.style.display="none";
+            c.style.display="block";
+
         }
         function h_menu()
         {
-            navlinks.style.right="-200px";
+            navlinks.style.display="none";
+            o.style.display="block"
+            c.style.display="none";
+
         }
     </script>
 </body>

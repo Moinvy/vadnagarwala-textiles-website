@@ -190,19 +190,34 @@ footer h4{
     }
     .nav-links ul li
     {
-        display: block;
+        display: inline-block;
+        margin-top : -10px;
+        text-align: center;
+    }
+    #close
+    {
+        position: relative;        
+        /* margin-left: -18px; */
+        display: none;
+    }
+    .nav-links ul li a
+    {
+        color : #39b75d
     }
     .nav-links
     {
         position : absolute;
-        background-color: orange;
-        height: 100vh;
-        width  : 200px;
-        top : 0;
-        right : -200px;       
+        background-color: white;
+        height: 7vh;
+        width  : 100vw;
+        top : 100%;
+        right: 0;       
         text-align: left;
-        z-index: 2s;
-        transition: 1s;
+        z-index: 2;
+        transition: 2s;
+        display: none;
+        text-align: center;
+        box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
     }
     nav .fa
     {
@@ -215,7 +230,7 @@ footer h4{
     }
     .nav-links ul
     {
-        padding : 30px;
+        padding : 10px;
     }
     .row{
         flex-direction: column;
