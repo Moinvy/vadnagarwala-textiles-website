@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *
 {
     margin :0;
@@ -19,6 +21,7 @@ nav{
 
 nav img{
     width : 150px;
+    margin-left : -50px;
 }
 
 .nav-links
@@ -61,6 +64,7 @@ nav img{
     width: 100%;
 }
 
+
 .dropbtn a:hover::after
 {
     width :0%;
@@ -75,6 +79,7 @@ nav img{
     display: none;
     border-top : 2px solid  #39b75d;
     margin-top : 10px;
+    margin-left : -30px;
     position: absolute;
     background-color: white;
     min-width: 150px;
@@ -90,7 +95,6 @@ nav img{
     display: block;
     width : 70px;
     margin :auto;
-
 }
 
 .dropdown:hover .dropdown-content {
@@ -226,7 +230,14 @@ footer h4{
     }
     .nav-links ul li a
     {
+       
         color : #39b75d
+    }
+    #close
+    {
+        position: relative;        
+        /* margin-left: -18px; */
+        display: none;
     }
     .nav-links
     {
@@ -256,13 +267,18 @@ footer h4{
     {
         padding : 10px;
     }
-    #close
-    {
-        position: relative;        
-        /* margin-left: -18px; */
-        display: none;
+    .upload-content{
+        width : 50%;
     }
-    .row{
-        flex-direction: column;
+    .upload-content a
+    {
+        font-size: 12px;
+    }
+    div
+    {
+        width : 80%;
+    }
+    .form{
+        margin-bottom : 100px;
     }
 }

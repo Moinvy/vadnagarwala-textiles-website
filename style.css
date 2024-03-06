@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin : 0;
     padding : 0;
-    font-family: roboto;
 }
 .header{
         min-height: 100vh;
@@ -128,7 +129,7 @@ nav img{
 
 .text-box h1
 {
-    font-size : 50px;
+    font-size : 45px;
     color :#39b75d;
 }
 
@@ -136,6 +137,7 @@ nav img{
     margin : 10px 0px 40px;
     font-size: 14px;
     line-height:25px;
+    font-family: Caudex;
 }
 
 .text-box-button
@@ -166,6 +168,8 @@ nav .fa
 
 /* course */
 
+
+
 .course
 {
     width: 80%;
@@ -191,6 +195,10 @@ nav .fa
 .para1 p
 {
     text-align: left;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height:100px;
+    font-size: 60px;
 }
 
 .para1 img
@@ -237,9 +245,9 @@ nav .fa
 .course p{
     font-size : 26px;
     font-weight: 300;
-    line-height: 30px;
+    line-height: 50px;
     padding : 55px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Caudex;
 }
 
 .row
@@ -257,6 +265,7 @@ nav .fa
     margin-bottom : 5%;
     padding : 20px 12px;
     box-sizing: border-box;
+    font-family: Caudex;
 }
 
 h3{
@@ -325,6 +334,7 @@ h3{
     justify-content: center;
     margin-left: -105px;
     margin-top : 60px;
+    font-family: Caudex;
 }
 .f-col
 {
@@ -343,6 +353,7 @@ h3{
     transition: 0.5s;
     color : whitesmoke;
     cursor: pointer;
+    transform: scale(1.03);
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
@@ -485,8 +496,86 @@ footer h4{
     color : white;
 }
 
+.articles
+{
+    width : 100%;
+    margin : auto;
+    justify-content: center;
+    align-items: center;
+}
 
-@media(max-width:700px)
+.articles h2{
+    font-family: Lato;
+    color : #39b75d;
+    text-align: center;
+    margin : 20px 0px;
+}
+.articles-content
+{
+    width : 90%;
+    margin : auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.articles-content button{
+    padding : 8px;
+    border: none;
+    margin : 0px 10px 10px 530px;
+    text-align: center;
+    font-size: 16px;
+    background-color: black;
+    border-radius: 5px;
+    font-family: "lato";
+}
+
+.articles-content button a 
+{
+    color : white;
+    text-decoration: none;
+}
+
+.articles-content button:hover
+{
+    background-color:#39b75d;
+    transform: scale(1.02);
+}
+
+.a-row
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.a-col h3{
+    font-family: "caudex";
+    padding : 2px;
+    font-size: 17px;
+}
+.a-col
+{
+    flex-basis: 20%;
+    margin : 20px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.a-col img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width : 100%;
+    height: 200px;
+}
+
+.a-col:hover{
+    transform: scale(1.1);
+    box-shadow: 0.5px 0.5px 5px 0px rgba(0, 0, 0, 0.8);
+    color :#39b75d;
+    cursor: pointer;
+}
+
+@media screen and (max-width:700px)
 {
     nav
     {
@@ -494,11 +583,11 @@ footer h4{
     };
     .text-box h1
     {
-        font-size : 20px;
+        font-size: smaller;
     }
     .text-box p{
-        margin : 10px 0px 40px;
-        font-size: 12px;
+        margin : 10px 0px 40px 0px;
+        font-size: 14px;
     }
     .nav-links ul li
     {
@@ -564,26 +653,67 @@ footer h4{
         display: block;
         margin-bottom: 40px;
         border-bottom: none;
-    }  
+    } 
+    .para1 img
+    {
+        height: 180px;
+    } 
     .para1 p
     {
         width : 100%;
         line-height: 40px;
         text-align: left;
-        margin-left : -60px;
+        margin-right: 0;
+        margin-left : -80px;
         margin-top : -50px;
         margin-bottom: -90px;
+        font-family: Poppins;
+        font-size: 16px;
+    }
 
+    .para2 button{
+        margin-top : 30px;
     }
     .para2 p
     {
         width : 100%;
         line-height: 40px;
         text-align: left;
-        margin-left : -70px;
+        margin-right: 0;
+        margin-left : -80px;
         margin-top : -50px;
         margin-bottom: -80px;
+        font-size: 16px;
+        font-family: Poppins;
     }
+    .row h3
+    {
+        font-size: 10px;
+    }
+    .row ul li a
+    {
+        font-size: 8px;
+    }
+    .foot-p
+    {
+        width: 100%;
+    }
+    .subscribe button
+    {
+        font-size: 7px;
+        text-align: center;
+        padding : 7px 2px;
+        width: 40%;
+    }
+    .subscribe input::placeholder
+    {
+        font-size: 8px;
+    }
+    .subscribe input 
+    {
+        width: 40%;
+        padding : 0px 2px 4px 2px; 
+    };
 }
 
 
