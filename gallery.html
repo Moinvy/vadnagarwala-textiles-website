@@ -7,11 +7,33 @@
     <link rel="icon" href="images/vadngarwala_textiles_logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- login popup-->
+    <section class="section onlogin" id="popup">
+        <div class="login-container overlay">
+            <div class="login-content">
+                <div class="login-head">
+                    <h1 class="login-title">Login</h1>
+                    <i class="fa fa-times" onclick="popup_close()"></i>
+                </div>
+                <form action="gallery.html" class="login" id="login" onsubmit="return validate()">
+                    <input type="text" name="username" placeholder="Enter Your Username" id="username" required>
+                    <i class="fa-solid fa-user"></i>
+                    <input type="password" name="password" placeholder="Enter Your Password" id="password" required>
+                    <i class="fa-solid fa-lock"></i>
+                    <button type="submit" id="btn"> LOGIN </button>
+                    <p class="login-end">Not a member?<span style="color : #39b75d"> <a href="contact.html"> Contact Us
+                    </a></span></p>
+                </form>
+            </div>
+        </div>
+    </section>
     <nav>
         <a href="index.html"><div class="logo">
         <img src="images/vadngarwala textiles.png" alt="credits : freepik">
@@ -19,8 +41,8 @@
         <div class="nav-links" id="nav-links">
             <ul>
                 <li><a href="index.html">HOME</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">CONTENT</a>
+                <li class="dropdown disable">
+                    <a class="dropbtn">CONTENT</a>
                     <div class="dropdown-content">
                         <a href="#">Sublink 1</a>
                         <a href="#">Sublink 2</a>
@@ -39,6 +61,12 @@
                 <li><a href="#">CONTACT</a></li>
             </ul>
         </div>
+            <div class="login-btn">
+                <ul>
+                    <li><button id="l-btn">LOGIN</button></li>
+                    <li><button id="s-btn">SIGNUP</button></li>
+                </ul>
+            </div>
         <i style="align-items: right;" class="fa fa-bars" id="open" onclick="s_menu()"></i>
         <i class="fa fa-times" onclick="h_menu()" id="close"></i>
     </nav>
@@ -56,12 +84,12 @@
                     <h3>CHIFFON PRINT</h3>
                 </div>
                 <div class="col">
-                    <a href="bandhani.html"><img src="images/GALLERY/bandhani_banner.jpg" alt=""></a>
-                    <h3>BANDHANI</h3>
+                    <a href="bandhani.html"><img src="images/GALLERY/mughal_banner.webp" alt=""></a>
+                    <h3>MUGHAL PRINT</h3>
                 </div>
                 <div class="col">
-                    <a href="chiffon.html"><img src="images/GALLERY/mughal_banner.webp" alt=""></a>
-                    <h3>MUGHAL PRINT</h3>
+                    <a href="chiffon.html"><img src="images/GALLERY/bandhani_banner.jpg" alt=""></a>
+                    <h3>BANDHANI</h3>
                 </div>
                 <div class="col">
                     <a href="chiffon.html"><img src="images/GALLERY/MUL_BANNER.webp" alt=""></a>
@@ -97,25 +125,7 @@
             <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
         </div>
     </footer>
-    <script>
-        var navlinks=document.getElementById("nav-links");
-        var o=document.getElementById("open");
-        var c=document.getElementById("close");
-        function s_menu()
-        {
-            navlinks.style.display="block";
-            o.style.display="none";
-            c.style.display="block";
-
-        }
-        function h_menu()
-        {
-            navlinks.style.display="none";
-            o.style.display="block"
-            c.style.display="none";
-
-        }
-    </script>
+    <script src="javascript.js"></script>
 </body>
 </html>
 </body>

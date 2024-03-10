@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+{
+    margin :0;
+    padding :0;
+}
+nav{
+    background : white;
+    display: flex;
+    padding-right :3%;
+    padding-left :5%;
+    justify-content: center;
+    align-items: center;
+    position : sticky;
+    top : 0;
+    z-index: 1;
+    height: 80px;
+    box-shadow: 0px 0px 5px 0  rgba(0,0,0,0.6);
+}
+
+nav img{
+    width : 150px;
+}
+
+.nav-links
+{
+    flex : 1;
+    text-align: center;
+}
+
+.nav-links ul li
+{
+    list-style-type : none;
+    display: inline-block;
+    padding : 8px;
+}
+
+
+.nav-links ul li a{
+    text-decoration: none;
+    color : black;
+    font-size: 15px;
+}
+
+.nav-links ul li a::after 
+{
+    content :'';
+    width : 0%;
+    height: 2px;
+    background-color: orange;
+    display: block;
+    margin : auto;
+    transition : 0.8s;
+}
+
+.nav-links ul li:hover a{
+    color : #39b75d;
+}
+.nav-links ul li a:hover::after
+{
+    width: 100%;
+}
+
+.dropbtn a:hover::after
+{
+    width :0%;
+}
+
+.dropdown
+{
+    position: relative;
+    display : inline-block;
+}
+.dropdown-content {
+    display: none;
+    border-top : 2px solid  #39b75d;
+    margin-top : 10px;
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
+    z-index: 1;
+    text-align: center;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width : 70px;
+    margin :auto;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#l-btn ,#s-btn
+{
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 10%;
+    padding : 7px;
+    color :#39b75d;
+    font-size: 13px;
+    font-family: "Poppins";
+    font-weight: 600;
+}
+
+.login-btn ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin : 0px 5px;
+}
+#l-btn:hover , #s-btn:hover
+{
+    background-color: #39b75d;
+    color : white;
+    cursor: pointer;
+}
+
+nav .fa{
+    display: none;
+}
+
+.content{
+    width: 100%;
+    margin-top :-10px;
+    margin-bottom : 50px;
+    background-color: whitesmoke;
+}
+.header
+{
+    margin: 10px 40px;
+    padding : 40px;
+    color: #39b75d;
+    font-weight: 900;
+    font-size: 2em;
+    font-family: "lato";
+}
+
+.cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin : -30px 40px 20px 40px;    
+    padding : 10px;
+    width : 95%;
+    justify-content: left;
+}
+
+.col{
+    flex-basis: 20%;
+    margin : 10px 20px;
+    border-radius : 10px;
+    text-align: center;
+    background-color: white
+}
+.col h3
+{
+    font-weight: 800;
+    margin : 10px; 
+}
+
+.col img 
+{
+    width : 300px;
+    height : 20vw;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.col:hover{
+    color : #39b75d;
+    transition: 0.5s;
+    transform :translateY(5%)
+}
+footer{
+    width: 100%;
+    text-align : center;
+    background-color: white;
+    padding : 20px 0px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.8);
+}
+footer h4{
+    margin-bottom :25px;
+    margin-top : 20px;
+    font-weight: 700;
+    color: #39b75d;
+    font-size: 20px;
+}
+.arrow
+{
+    font-size: 20px;
+    margin : 15px 0px 0px 0px;
+}
+.arrow :hover{
+    color : black;
+}
+
+.arrow a{
+    color :#39b75d;
+}
+
+.icons img
+{
+    margin : 0px 13px;
+    padding : 18px 0px;
+    width : 20px;
+}
+
+.upload
+{
+    width: 100%;
+    margin : auto;
+    justify-content: center;
+}
+.upload-content
+{
+    background-color:#39b75d;
+    width : 30%;
+    padding : 15px;
+    margin : auto;
+    justify-content: center;
+    text-align: center;
+    border : none;
+    border-radius: 20px;
+}
+
+.upload-content a
+{
+    font-family:Arial, Helvetica, sans-serif ;
+    text-decoration: none;
+    color :white;
+}
+
+
+/* login */
+.section
+{
+    position : fixed;
+    z-index: 99999;
+    width : 100%;
+    height: 100vh;
+}
+
+#popup
+{
+    display: block;
+}
+
+/* #sign 
+{
+    display: none;
+} */
+
+.login-container
+{
+    width : 100%;
+    height: 100vh;
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+}
+
+
+.login-content
+{
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%, -50%);
+    width : 25%;
+    border : none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 90px 10px rgba(57, 183, 93, 0.9);
+    padding : 15px;
+    background-color: white
+}
+
+.login-content .login-title{
+    margin : 20px;
+    font-family: "Poppins";
+    color : #343a40;
+    font-weight: 600;
+}
+
+.login input
+{  
+    font-family: "Poppins"; 
+    margin : 10px 12px;
+    border : none;
+    padding : 5px 0px 5px 35px;
+    width : 80%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid lightgray;
+    border-top : 2px solid transparent;
+    transition: all ease 0.2s;
+    letter-spacing: 1px;
+}
+
+.login input:is(:focus,:active)
+{
+    border-bottom-color: #39b75d;
+} 
+
+.login i{
+    position: absolute;
+    left : 14%;
+    transform :translate(-17px,20px);
+    font-size: 12px; 
+}
+
+.login input:is(:focus,:valid) ~ i
+{
+    color: #39b75d;
+}
+.login-content .title::before {
+    content: '';
+    position: absolute;
+    bottom: 77%;
+    left: 10%;
+    width: 25px;
+    height: 3px;
+    background-color: #39b75d;
+    border-radius: 50px;
+}
+
+.login-head
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.login-head i
+{
+    margin : 25px 10px 10px 170px;
+    font-size: 15px;
+}
+
+.login-head i:hover{
+    cursor: pointer;
+    color : #39b75d;
+}
+
+#btn
+{
+    position: relative;
+    left : 4%;
+    border : none;
+    padding : 10px;
+    width : 90%;
+    margin :20px 0px;
+    border-radius: 10px;
+    font-weight: 800;
+    background-color: whitesmoke;
+    letter-spacing: 1px;
+}
+
+#btn:hover{
+    background-color: #39b75d;
+    color : white;
+}
+
+.login-end
+{
+    text-align: center;
+    font-family: "lato";
+    margin :10px 0px;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.login-end a{
+    text-decoration: none;
+    color : #39b75d;
+    font-weight: 600;
+}
+
+.login-end a:hover 
+{
+    color : blue;
+}
+
+@media(max-width:700px)
+{
+    nav
+    {
+        position: sticky;
+    };
+    .text-box h1
+    {
+        font-size : 20px;
+    }
+    .text-box p{
+        margin : 10px 0px 40px;
+        font-size: 12px;
+    }
+    .nav-links ul li
+    {
+        display: inline-block;
+        margin-top : -10px;
+        text-align: center;
+    }
+    .nav-links ul li a
+    {
+        color : #39b75d
+    }
+    #close
+    {
+        position: relative;        
+        /* margin-left: -18px; */
+        display: none;
+    }
+    .nav-links
+    {
+        position : absolute;
+        background-color: white;
+        height: 7vh;
+        width  : 100vw;
+        top : 100%;
+        right: 0;       
+        text-align: left;
+        z-index: 2;
+        transition: 2s;
+        display: none;
+        text-align: center;
+        box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+    }
+    nav .fa
+    {
+        display: inline-block;
+        color : black;
+        margin-top: 10px;
+        margin-left :150px;
+        font-size: 22px;
+        cursor : pointer;
+    }
+    .nav-links ul
+    {
+        padding : 10px;
+    }
+    .cards
+    {
+        flex-direction: column;
+    }
+    .col img
+    {
+        height :  250px;
+    }
+    .upload-content{
+        width : 50%;
+    }
+    .upload-content a
+    {
+        font-size: 12px;
+    }
+}

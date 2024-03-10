@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.section
+{
+    position : fixed;
+    z-index: 99999;
+    width : 100%;
+    height: 100vh;
+}
+
+#popup
+{
+    display: none;
+}
+
+/* #sign 
+{
+    display: none;
+} */
+
+.login-container
+{
+    width : 100%;
+    height: 100vh;
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+}
+
+
+.login-content
+{
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%, -50%);
+    width : 25%;
+    border : none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 90px 10px rgba(57, 183, 93, 0.9);
+    padding : 15px;
+    background-color: white
+}
+
+.login-content .login-title{
+    margin : 20px;
+    font-family: "Poppins";
+    color : #343a40;
+    font-weight: 600;
+}
+
+.login input
+{  
+    font-family: "Poppins"; 
+    margin : 10px 12px;
+    border : none;
+    padding : 5px 0px 5px 35px;
+    width : 80%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid lightgray;
+    border-top : 2px solid transparent;
+    transition: all ease 0.2s;
+    letter-spacing: 1px;
+}
+
+.login input:is(:focus,:active)
+{
+    border-bottom-color: #39b75d;
+} 
+
+.login i{
+    position: absolute;
+    left : 14%;
+    transform :translate(-17px,20px);
+    font-size: 12px; 
+}
+
+.login input:is(:focus,:valid) ~ i
+{
+    color: #39b75d;
+}
+.login-content .title::before {
+    content: '';
+    position: absolute;
+    bottom: 77%;
+    left: 10%;
+    width: 25px;
+    height: 3px;
+    background-color: #39b75d;
+    border-radius: 50px;
+}
+
+.login-head
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.login-head i
+{
+    margin : 25px 10px 10px 170px;
+    font-size: 15px;
+}
+
+.login-head i:hover{
+    cursor: pointer;
+    color : #39b75d;
+}
+
+#btn
+{
+    position: relative;
+    left : 4%;
+    border : none;
+    padding : 10px;
+    width : 90%;
+    margin :20px 0px;
+    border-radius: 10px;
+    font-weight: 800;
+    background-color: whitesmoke;
+    letter-spacing: 1px;
+}
+
+#btn:hover{
+    background-color: #39b75d;
+    color : white;
+}
+
+.login-end
+{
+    text-align: center;
+    font-family: "lato";
+    margin :10px 0px;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.login-end a{
+    text-decoration: none;
+    color : #39b75d;
+    font-weight: 600;
+}
+
+.login-end a:hover 
+{
+    color : blue;
+}
